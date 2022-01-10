@@ -1,0 +1,74 @@
+.container {
+  height: 100vh;
+
+  .app {
+    background: lightgray;
+    padding: 0.2em;
+    display: flex;
+    box-shadow: 1px 1px 1px lightgray;
+
+    .pads {
+      //   background: white;
+      width: 312px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .pad {
+        width: 100px;
+        height: 100px;
+        background: gray;
+        margin: 2px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        box-shadow: 1px 1px 1px gray;
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+          background: black;
+          color: white;
+        }
+      }
+    }
+
+    .dashboard {
+      //background: cyan;
+      padding: 2em;
+      flex-direction: column;
+
+      .power {
+        background: white;
+        width: 50px;
+        height: 20px;
+        padding: 2px;
+        box-shadow: 1px 1px 1px white;
+
+        .power-button {
+          width: 30px;
+          display: block;
+          border: none;
+          background: blue;
+          color: white;
+          font-weight: 600;
+          transform: translateX(15px);
+          transition: all 200ms ease-in-out;
+
+          &.slide-power-button {
+            transform: translateX(0);
+            background: red;
+          }
+        }
+      }
+
+      .display {
+        margin: 2em 0;
+        background: white;
+        width: 120px;
+        height: 30px;
+        box-shadow: 1px 1px 1px white;
+      }
+
+      .volume-control {
+      }
+    }
+  }
+}

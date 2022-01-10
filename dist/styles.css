@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  height: 100vh;
+}
+
+.container .app {
+  background: lightgray;
+  padding: 0.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 1px 1px 1px lightgray;
+          box-shadow: 1px 1px 1px lightgray;
+}
+
+.container .app .pads {
+  width: 312px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .app .pads .pad {
+  width: 100px;
+  height: 100px;
+  background: gray;
+  margin: 2px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  -webkit-box-shadow: 1px 1px 1px gray;
+          box-shadow: 1px 1px 1px gray;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.container .app .pads .pad:hover {
+  background: black;
+  color: white;
+}
+
+.container .app .dashboard {
+  padding: 2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .app .dashboard .power {
+  background: white;
+  width: 50px;
+  height: 20px;
+  padding: 2px;
+  -webkit-box-shadow: 1px 1px 1px white;
+          box-shadow: 1px 1px 1px white;
+}
+
+.container .app .dashboard .power .power-button {
+  width: 30px;
+  display: block;
+  border: none;
+  background: blue;
+  color: white;
+  font-weight: 600;
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.container .app .dashboard .power .power-button.slide-power-button {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  background: red;
+}
+
+.container .app .dashboard .display {
+  margin: 2em 0;
+  background: white;
+  width: 120px;
+  height: 30px;
+  -webkit-box-shadow: 1px 1px 1px white;
+          box-shadow: 1px 1px 1px white;
+}
+/*# sourceMappingURL=styles.css.map */
